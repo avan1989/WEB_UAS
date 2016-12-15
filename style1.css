@@ -1,0 +1,338 @@
+@font-face {
+	font-family: "OpenSans";
+	src : url('OpenSans.ttf');
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+.line {
+	border-bottom: 5px solid #ccc;
+	width: 80%;
+	float: center;
+	margin: auto;
+	margin-bottom: 30px;
+}
+:hover {
+	-webkit-transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	transition:all 0.3s ease;
+}
+
+.container {
+	width: 100%;
+	text-align: center;
+}
+.container .contanav nav {
+	background-color: #ebebeb;
+	width: 100%;
+}
+nav{
+	display: flex; 
+	justify-content: center;
+  	background-color: #ebebeb;
+  	width: 80%;
+  	margin: auto;
+}
+nav ul {
+	list-style:none;
+	margin: 0;
+	padding: 0;
+
+}
+nav a {
+	color:#5d5e60; text-decoration: none; 
+	padding:40px 30px; 
+	display: inline-block;
+	font-size: 13px;
+	font-family: "OpenSans";
+	letter-spacing: 1px;
+	font-weight: bold;
+	
+}
+nav a:hover {
+ 	color: #0093dd;
+}
+
+nav ul li {
+
+	float:left;
+	position: relative;
+}
+
+nav ul li img {
+	width: 60px;
+	height: 70px;
+	padding: 20px;
+	background-color: #fff;
+ 	cursor: pointer;
+ 	border: 100%;
+ 	background-color: #ebebeb;
+}	
+.clear {clear:both;}
+/*-----ini buat dropdown-----*/
+nav ul ul {
+	position: absolute;
+	width: 150px;
+	z-index: 5;
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: visibility 0s ease;
+	-moz-transition: opacity 0.5s ease;
+	transition: visibility 0s ease;
+	transition: opacity 0.5s ease;
+}
+nav ul ul:before {
+	content:"";
+	width:0;
+	height:0;
+	position:absolute;
+	bottom:100%;
+	left:15px;
+	border:8px solid transparent;
+	border-color:transparent transparent #0380bf;
+}
+nav ul li:hover > ul {
+	visibility: visible;
+	opacity: 1;
+}
+nav ul ul li {
+	line-height: normal;
+	float: none;
+	background: #fff;
+}
+nav ul ul li:hover, nav ul ul ul li {
+	background: #fff;
+	color: #fff
+}
+nav ul ul ul li:hover {
+	background: #0380bf;
+}
+nav ul ul li a {
+	padding: 10px 10px;
+	display: block;
+}
+nav ul ul ul {
+	top: 0;
+	left: 100%;
+}
+nav ul li ul li a {
+}
+nav ul ul ul:before {
+	display: none;
+}
+/*-----ini buat dropdown-----*/
+.container .visi {
+	width: 80%;
+	margin: auto;
+}
+.container .visi2 {
+	width: 100%;
+	margin: auto;
+}
+.container .kiri {
+	width: 45%;
+	float: left;
+	margin-top: 30px;
+}
+.container .kanan {
+	width: 45%;
+	float: right;
+}
+.visi h2 {
+	font-family: sans-serif;
+}
+.container .kiri h3 {
+		color: #0093dd;
+		font-size: 30px;
+		letter-spacing: 2px;
+}
+.container .kanan h3{
+		color: #f8c301;
+		font-size: 30px;
+		letter-spacing: 2px;
+}
+.kiri p {
+	font-family: "OpenSans";
+	text-align: left;
+
+}
+.kanan ul {
+	font-family: "OpenSans";
+	text-align: left;
+
+}
+.container .pad2 {
+	width: 80%;
+	margin: auto;
+}
+.pad2 ol {
+	text-align: left;
+	font-family: "OpenSans";
+}
+.pad2 h1 {
+	font-size: 30px;
+	font-family: sans-serif;
+}
+.container .pad2 p {
+	font-family:"OpenSans";text-align:left;
+}
+.line2 {
+	border-bottom: 5px solid #ccc;
+	width: 65%;
+	float: center;
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+.line3 {
+	border-bottom: 5px solid #0380bf;
+	width: 20%;
+	float: center;
+	margin: auto;
+	margin-bottom: 30px;
+} 
+/*-------footer-----------*/
+footer .container {
+	width: 100%;
+	height: 400px;
+	margin-top: 20px;
+	text-align: center;
+	background-color: #38383a;
+}
+footer .footer {
+	width: 80%;
+	border: solid 2px grey;
+	height: 170px;
+	float: left;
+	border-radius: 2%;
+	margin: 50px 10%;
+}
+footer .brdr {
+	width: 100%;
+	text-align: center;
+}
+.footer .brdr .box1{
+	width: 33%;
+	float: left;
+}
+.box1 h3{
+	color: white;
+	font-size: 22px;
+	font-family: "OpenSans";
+	text-align: left;
+	margin-left: 40px;
+}
+.box1 ul {
+	list-style: none;
+	text-align: left;
+}
+.box1 ul li a {
+	color: grey;
+	font-family: "OpenSans";
+	text-decoration: none;
+	text-align: left;
+	padding-right: 30px;
+	background: #38383a;
+
+}
+.box1 ul li a:hover {
+	color: #grey;
+}
+.box1 ul li img {
+	width: 20px;
+	height: 18px;
+	float: left;
+	margin-right: 10px;
+
+}
+.box1 ul li {
+	color: grey;
+	font-family: "OpenSans";
+}
+.bottom h3 {
+	width: 80%;
+	color: white;
+	font-size: 22px;
+	font-family: "OpenSans";
+	margin: auto;
+
+}
+.bottom .social_icon{
+	width: 100%;
+	text-align: center;
+	padding-top: 10px;
+}
+.bottom .social_icon a img {
+	 box-shadow: 0 3px 6px rgba(0,0,0,.25);
+    transform:  rotate(+2deg);
+    -o-transform: rotate(+2deg);
+    -webkit-transform:  rotate(+2deg);
+    -moz-transform: rotate(+2deg);
+}
+.bottom .social_icon a img:hover{
+ box-shadow:  0 3px 6px rgba(0,0,0,.5);
+    transform:  rotate(-1deg);
+    -webkit-transform:  rotate(-1deg);
+    -o-transform:  rotate(-1deg);
+    -moz-transform: rotate(-1deg);
+}
+.padd {
+	height: 30px;
+	width: 30px;
+	margin-left: 20px;
+}
+.padd4 {
+	width: 25px;
+	height: 25px;
+	margin-left: 20px;
+}
+.padd1 {
+	width: 35px;
+	height: 35px;
+}
+footer .copy {
+	width: 80%;
+	margin: auto;
+	padding-top: 20px;
+}
+footer .copy1{
+	width: 100%;
+}
+footer .copy_right, .copy_left {
+	font-size: 13px;
+}
+footer .copyright a:hover {
+	color: #0093dd;
+}
+footer .copy_left {
+	text-align: left;
+	width: 50%;
+	float: left;
+	color: grey;
+	font-size: 14px;
+	font-family: "OpenSans";
+}
+footer .copy_right {
+	text-align: right;
+	color: grey;
+	font-size: 14px;
+	font-family: "OpenSans";
+}
+footer .container_footer {
+	width: 100%;
+	height: 50px;
+	margin-top: 20px;
+	text-align: center;
+	background-color: #18181b;
+}
+.container_footer .copy .copy1 a {
+	color: #fff;
+	text-decoration: none;
+}
+.container_footer .copy .copy1 a:hover {
+	color: grey;
+}
+/*-------footer-----------*/
+
